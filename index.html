@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gollapalli Rasmitha · Full-stack web developer with a security focus</title>
+  <meta name="description" content="Gollapalli Rasmitha builds complete, live web products and the systems that keep them safe: GuardRail (security monitoring), HomeHaat (marketplace) and Oppora (AI opportunity tracker).">
+  <meta name="author" content="Gollapalli Rasmitha">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gollapalli Rasmitha · Full-stack web developer with a security focus">
+  <meta property="og:description" content="I build complete, live web products – and the systems that keep them safe.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d9488'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EGR%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/rasmitha.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply a saved theme before the page paints (no flash). Storage can be blocked: ignore if so.
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Gollapalli Rasmitha",
+   "jobTitle":"Full-stack web developer (security focus)",
+   "sameAs":["https://www.linkedin.com/in/gollapalli-rasmitha-638014321","https://github.com/GollapalliRasmitha","https://youtube.com/@gollapallirasmitha"]}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top" aria-label="Gollapalli Rasmitha, home"><span class="brand-mark">GR</span><span class="brand-name">Rasmitha</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" type="button" aria-label="Switch between light and dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Full-stack web developer · security focus</p>
+        <h1>Gollapalli <span class="accent">Rasmitha</span></h1>
+        <p class="lead">I build complete, live web products – and the systems that keep them safe.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="hero-facts" aria-label="At a glance">
+          <li><strong>3</strong> live full-stack products</li>
+          <li><strong>2</strong> real bugs found by my own security tool</li>
+        </ul>
+      </div>
+      <figure class="hero-media tilt" data-video="intro.mp4">
+        <img src="assets/rasmitha.webp" width="640" height="801" alt="Gollapalli Rasmitha, smiling, in a black and gold outfit" fetchpriority="high">
+        <!-- If intro.mp4 is added to the repo, script.js swaps this photo for the video (muted, with a play button). -->
+      </figure>
+    </section>
+
+    <!-- Moving ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Next.js</span><span>TypeScript</span><span>Django</span><span>PostgreSQL</span><span>HMAC signing</span><span>2FA (TOTP)</span><span>MITRE ATT&amp;CK</span><span>Three.js</span><span>Redis</span><span>Playwright</span><span>Vercel</span><span>Render</span>
+        <span>Next.js</span><span>TypeScript</span><span>Django</span><span>PostgreSQL</span><span>HMAC signing</span><span>2FA (TOTP)</span><span>MITRE ATT&amp;CK</span><span>Three.js</span><span>Redis</span><span>Playwright</span><span>Vercel</span><span>Render</span>
+      </div>
+    </div>
+
+    <!-- About + timeline -->
+    <section id="about" class="section container">
+      <p class="eyebrow">About</p>
+      <h2>From security awareness to secure, live products</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a full-stack web developer with a security focus. I build complete products – frontend, backend,
+            database, deployment – and then the tools that watch over them.</p>
+          <p>My path started with cyber awareness and security tools, and grew into three live web products: a
+            marketplace, an AI opportunity tracker, and a security monitoring system that protects both.</p>
+        </div>
+        <ol class="timeline">
+          <li><h3>Cyber awareness &amp; cyber-crime reporting</h3>
+            <p>CyberGuardian: a web app to report suspected deepfake incidents with evidence uploads and a dashboard.</p></li>
+          <li><h3>Account-hacking prevention</h3>
+            <p>Work on keeping personal accounts safe, including a Personal Digital Security Posture Analyzer.</p></li>
+          <li><h3>HomeHaat</h3><p>A live marketplace for home businesses: one bag, one payment, split per maker.</p></li>
+          <li><h3>Oppora</h3><p>A live AI agent that finds opportunities and deadlines in Gmail (read-only).</p></li>
+          <li><h3>GuardRail</h3><p>A live security monitoring system (mini SIEM) watching HomeHaat and Oppora.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <p class="eyebrow">Projects</p>
+      <h2>Live products, with the code to read</h2>
+
+      <div class="projects">
+        <article class="card project tilt">
+          <img src="assets/guardrail.webp" width="960" height="667" loading="lazy" alt="GuardRail dashboard: events per hour, busiest IPs and open alerts (demo data)">
+          <div class="card-body">
+            <h3>GuardRail</h3>
+            <p class="sub">Security monitoring dashboard (mini SIEM) for my two live sites</p>
+            <ul>
+              <li>Signed, replay-proof event intake (HMAC-SHA256 + nonce) from HomeHaat and Oppora</li>
+              <li>Six detection rules mapped to MITRE ATT&amp;CK; one alert per attack, updated live</li>
+              <li>3D attack globe, log upload and a read-only public demo</li>
+            </ul>
+            <p class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Three.js</span><span>Playwright</span></p>
+            <p class="links">
+              <a class="btn btn-primary btn-sm" href="https://guardrail-rasmitha.vercel.app" target="_blank" rel="noopener">Live<span class="sr"> (GuardRail, opens in a new tab)</span></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/GollapalliRasmitha/guardrail" target="_blank" rel="noopener">GitHub<span class="sr"> (GuardRail code)</span></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card project tilt">
+          <img src="assets/homehaat.webp" width="960" height="600" loading="lazy" alt="HomeHaat home page with makers and products">
+          <div class="card-body">
+            <h3>HomeHaat</h3>
+            <p class="sub">Marketplace for home businesses: bakers, pickle makers, artists, tailors, crafters</p>
+            <ul>
+              <li>One bag across many makers, one payment split into one order per maker</li>
+              <li>Cancel one maker's part and get exactly that part refunded</li>
+              <li>15-minute stock holds without overselling; payments verified by signature</li>
+            </ul>
+            <p class="tags"><span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>Razorpay</span><span>Cloudinary</span></p>
+            <p class="links">
+              <a class="btn btn-primary btn-sm" href="https://homehaat.vercel.app" target="_blank" rel="noopener">Live<span class="sr"> (HomeHaat, opens in a new tab)</span></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/GollapalliRasmitha/homehaat" target="_blank" rel="noopener">GitHub<span class="sr"> (HomeHaat code)</span></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card project tilt">
+          <img src="assets/oppora.webp" width="960" height="600" loading="lazy" alt="Oppora dashboard with ranked opportunities and deadlines (demo account)">
+          <div class="card-body">
+            <h3>Oppora</h3>
+            <p class="sub">AI agent that finds opportunities in your Gmail (read-only)</p>
+            <ul>
+              <li>Finds internships, jobs, hackathons, scholarships and events in Gmail</li>
+              <li>Ranks each one with a match % you can inspect, and tracks deadlines on a calendar</li>
+              <li>An AI that never invents details, plus a read-only demo account</li>
+            </ul>
+            <p class="tags"><span>Next.js</span><span>Django</span><span>Gemini</span><span>PostgreSQL</span><span>Redis</span></p>
+            <p class="links">
+              <a class="btn btn-primary btn-sm" href="https://oppora-app.vercel.app" target="_blank" rel="noopener">Live<span class="sr"> (Oppora, opens in a new tab)</span></a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/GollapalliRasmitha/Oppora" target="_blank" rel="noopener">GitHub<span class="sr"> (Oppora code)</span></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card project small tilt">
+          <div class="card-body">
+            <h3>Personal Digital Security Posture Analyzer</h3>
+            <p class="sub">Helps people check their online safety: password strength, data-breach checks and a security
+              score with practical suggestions.</p>
+            <p class="links">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/GollapalliRasmitha/Personal-Digital-Security-Posture-Analyzer" target="_blank" rel="noopener">GitHub<span class="sr"> (Security Posture Analyzer code)</span></a>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Highlight -->
+      <div class="highlight">
+        <h3><span class="accent">2 real bugs</span> my own security tool found</h3>
+        <div class="bugs">
+          <div class="bug">
+            <p class="bug-num">70 / 75</p>
+            <h4>A rate-limit race condition</h4>
+            <p>My attack simulator sent 75 parallel sign-in requests against a limit of 20 a minute – 70 got through,
+              because the counter was read and written in two steps. Fixed with an atomic Redis counter: now exactly
+              20 pass.</p>
+          </div>
+          <div class="bug">
+            <p class="bug-num">1 IP</p>
+            <h4>Every visitor looked like a proxy</h4>
+            <p>After going live, alerts showed a Cloudflare address for every visitor, so they shared one sign-in limit.
+              I measured the proxy chain and fixed it with a secret-signed header and the right hop count.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <p class="eyebrow">Skills</p>
+      <h2>What I work with</h2>
+      <div class="skills">
+        <div class="card skill-group"><h3>Frontend</h3><p class="chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Three.js</span></p></div>
+        <div class="card skill-group"><h3>Backend</h3><p class="chips"><span>Python</span><span>Django</span><span>Django REST</span><span>Java</span><span>C</span></p></div>
+        <div class="card skill-group"><h3>Databases</h3><p class="chips"><span>PostgreSQL</span><span>Redis</span><span>MySQL</span><span>Oracle</span></p></div>
+        <div class="card skill-group"><h3>Tools &amp; deployment</h3><p class="chips"><span>Docker</span><span>Git</span><span>GitHub Actions</span><span>Vercel</span><span>Render</span><span>Playwright</span></p></div>
+        <div class="card skill-group security"><h3>Security</h3><p class="chips"><span>HMAC</span><span>2FA (TOTP)</span><span>OAuth</span><span>Rate limiting</span><span>MITRE ATT&amp;CK</span><span>Ethical hacking</span></p></div>
+        <div class="card skill-group how"><h3>How I build</h3>
+          <p>With <strong>Claude Code</strong> as my AI pair-programmer: I set the brief and the rules, make the
+            decisions and review the results – with tests and live deploys for every project.</p></div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section container">
+      <p class="eyebrow">Certifications</p>
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li class="card tilt"><span class="cert-icon" aria-hidden="true">🛡️</span>Cybersecurity</li>
+        <li class="card tilt"><span class="cert-icon" aria-hidden="true">🔍</span>Ethical Hacking</li>
+        <li class="card tilt"><span class="cert-icon" aria-hidden="true">🐍</span>Python</li>
+        <li class="card tilt"><span class="cert-icon" aria-hidden="true">💬</span>Communication Skills</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk</h2>
+      <p class="lead">Open to roles and projects in full-stack development and application security.</p>
+      <div class="contact-links">
+        <a class="card contact-link tilt" href="https://www.linkedin.com/in/gollapalli-rasmitha-638014321" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21H9z"/></svg>
+          LinkedIn</a>
+        <a class="card contact-link tilt" href="https://github.com/GollapalliRasmitha" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.6 4.8 18.6 5 18.6 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub</a>
+        <a class="card contact-link tilt" href="https://youtube.com/@gollapallirasmitha" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9l5.4 3.1z"/></svg>
+          YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Gollapalli Rasmitha</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
