@@ -236,7 +236,8 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 .contact-links { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .contact-link { display: flex; align-items: center; gap: 12px; padding: 20px 22px; min-height: 66px; color: var(--text);
   text-decoration: none; font-family: var(--display); font-weight: 600; font-size: 1.1rem; }
-.contact-link svg { width: 24px; height: 24px; fill: var(--orange); }
+.contact-link svg { width: 24px; height: 24px; flex: none; fill: var(--orange); }
+.contact-link { overflow-wrap: anywhere; } /* the email address can wrap on narrow cards */
 
 /* Footer */
 .footer { padding: 26px 0; color: var(--muted); position: relative; }
