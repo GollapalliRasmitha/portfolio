@@ -179,6 +179,9 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
   background: rgb(59 130 246 / 0.12); border: 1px solid rgb(59 130 246 / 0.3); }
 .tags span:first-child { background: rgb(249 115 22 / 0.12); border-color: rgb(249 115 22 / 0.35); }
 .links { display: flex; flex-wrap: wrap; gap: 10px; margin: auto 0 0; padding-top: 6px; }
+/* The GuardRail screenshot is wide (about 2:1): show all of it, never trim the sides. The backdrop is the
+   dashboard's own navy, so any spare space blends into the screenshot. */
+.project.feature img { aspect-ratio: auto; object-fit: contain; object-position: center; background: #070d1a; }
 .project.wide { background: linear-gradient(120deg, rgb(59 130 246 / 0.1), var(--surface) 45%, rgb(249 115 22 / 0.1)); }
 @media (min-width: 760px) {
   .projects { grid-template-columns: repeat(6, 1fr); }
