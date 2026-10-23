@@ -7,12 +7,9 @@ const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// ---- Light / dark: follows the system until you choose; your choice is remembered. --------------------------------
+// ---- Light / dark: dark by default; your choice is remembered. --------------------------------------------------------
 document.querySelector(".theme-btn").addEventListener("click", () => {
-  const dark =
-    root.dataset.theme === "dark" ||
-    (!root.dataset.theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
-  root.dataset.theme = dark ? "light" : "dark";
+  root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
   try {
     localStorage.setItem("theme", root.dataset.theme);
   } catch {

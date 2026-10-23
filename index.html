@@ -6,8 +6,7 @@
   <title>Gollapalli Rasmitha · Full-stack web developer with a security focus</title>
   <meta name="description" content="Gollapalli Rasmitha builds complete, live web products and the systems that keep them safe: GuardRail (security monitoring), HomeHaat (marketplace) and Oppora (AI opportunity tracker).">
   <meta name="author" content="Gollapalli Rasmitha">
-  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#050508">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Gollapalli Rasmitha · Full-stack web developer with a security focus">
   <meta property="og:description" content="I build complete, live web products – and the systems that keep them safe.">
@@ -15,7 +14,10 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d9488'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EGR%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f97316'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EGR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap">
   <link rel="preload" as="image" href="assets/rasmitha.webp" type="image/webp">
   <link rel="stylesheet" href="style.css">
   <script>
@@ -67,10 +69,10 @@
           <li><strong>2</strong> real bugs found by my own security tool</li>
         </ul>
       </div>
-      <figure class="hero-media tilt" data-video="intro.mp4">
+      <div class="hero-photo"><figure class="hero-media tilt" data-video="intro.mp4">
         <img src="assets/rasmitha.webp" width="640" height="801" alt="Gollapalli Rasmitha, smiling, in a black and gold outfit" fetchpriority="high">
         <!-- If intro.mp4 is added to the repo, script.js swaps this photo for the video (muted, with a play button). -->
-      </figure>
+      </figure></div>
     </section>
 
     <!-- Moving ticker -->
@@ -110,7 +112,7 @@
       <h2>Live products, with the code to read</h2>
 
       <div class="projects">
-        <article class="card project tilt">
+        <article class="card project feature tilt">
           <img src="assets/guardrail.webp" width="960" height="667" loading="lazy" alt="GuardRail dashboard: events per hour, busiest IPs and open alerts (demo data)">
           <div class="card-body">
             <h3>GuardRail</h3>
@@ -164,7 +166,7 @@
           </div>
         </article>
 
-        <article class="card project small tilt">
+        <article class="card project small wide tilt">
           <div class="card-body">
             <h3>Personal Digital Security Posture Analyzer</h3>
             <p class="sub">Helps people check their online safety: password strength, data-breach checks and a security
@@ -202,12 +204,12 @@
       <p class="eyebrow">Skills</p>
       <h2>What I work with</h2>
       <div class="skills">
-        <div class="card skill-group"><h3>Frontend</h3><p class="chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Three.js</span></p></div>
-        <div class="card skill-group"><h3>Backend</h3><p class="chips"><span>Python</span><span>Django</span><span>Django REST</span><span>Java</span><span>C</span></p></div>
-        <div class="card skill-group"><h3>Databases</h3><p class="chips"><span>PostgreSQL</span><span>Redis</span><span>MySQL</span><span>Oracle</span></p></div>
-        <div class="card skill-group"><h3>Tools &amp; deployment</h3><p class="chips"><span>Docker</span><span>Git</span><span>GitHub Actions</span><span>Vercel</span><span>Render</span><span>Playwright</span></p></div>
-        <div class="card skill-group security"><h3>Security</h3><p class="chips"><span>HMAC</span><span>2FA (TOTP)</span><span>OAuth</span><span>Rate limiting</span><span>MITRE ATT&amp;CK</span><span>Ethical hacking</span></p></div>
-        <div class="card skill-group how"><h3>How I build</h3>
+        <div class="card skill-group sk-fe"><h3>Frontend</h3><p class="chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Three.js</span></p></div>
+        <div class="card skill-group sk-be"><h3>Backend</h3><p class="chips"><span>Python</span><span>Django</span><span>Django REST</span><span>Java</span><span>C</span></p></div>
+        <div class="card skill-group sk-db"><h3>Databases</h3><p class="chips"><span>PostgreSQL</span><span>Redis</span><span>MySQL</span><span>Oracle</span></p></div>
+        <div class="card skill-group sk-tl"><h3>Tools &amp; deployment</h3><p class="chips"><span>Docker</span><span>Git</span><span>GitHub Actions</span><span>Vercel</span><span>Render</span><span>Playwright</span></p></div>
+        <div class="card skill-group security sk-sec"><h3>Security</h3><p class="chips"><span>HMAC</span><span>2FA (TOTP)</span><span>OAuth</span><span>Rate limiting</span><span>MITRE ATT&amp;CK</span><span>Ethical hacking</span></p></div>
+        <div class="card skill-group how sk-how"><h3>How I build</h3>
           <p>With <strong>Claude Code</strong> as my AI pair-programmer: I set the brief and the rules, make the
             decisions and review the results – with tests and live deploys for every project.</p></div>
       </div>
