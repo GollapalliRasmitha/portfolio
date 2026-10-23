@@ -17,6 +17,14 @@ document.querySelector(".theme-btn").addEventListener("click", () => {
   }
 });
 
+// ---- Email: joined here from two pieces, so bots reading the raw page don't find a whole address. ------------------
+const emailLink = document.getElementById("email-link");
+if (emailLink) {
+  const address = `${emailLink.dataset.user}@${emailLink.dataset.domain}`;
+  emailLink.href = `mailto:${address}`;
+  emailLink.querySelector(".email-text").textContent = address;
+}
+
 // ---- Phone menu ----------------------------------------------------------------------------------------------------
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.getElementById("nav-links");
