@@ -159,7 +159,7 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 .timeline li { position: relative; padding-bottom: 24px; }
 .timeline li::before { content: ""; position: absolute; left: -29px; top: 5px; width: 14px; height: 14px; border-radius: 50%;
   background: var(--bg-2); border: 3px solid var(--blue); }
-.timeline li:nth-child(n + 3)::before { border-color: var(--orange); box-shadow: 0 0 12px rgb(249 115 22 / 0.5); }
+.timeline li:nth-child(n + 2)::before { border-color: var(--orange); box-shadow: 0 0 12px rgb(249 115 22 / 0.5); }
 .timeline h3 { font-size: 1.12rem; }
 .timeline p { margin: 4px 0 0; color: var(--muted); }
 @media (min-width: 860px) { .about-grid { grid-template-columns: 1fr 1fr; } }
