@@ -237,10 +237,6 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 .cert-meta { color: var(--muted); font-size: 0.9rem; }
 .cert-cta { margin-top: auto; padding-top: 8px; color: var(--orange-text); font-weight: 600; font-size: 0.92rem; }
 .cert-open:hover .cert-cta { text-decoration: underline; }
-.cert-plain { align-self: start; align-items: center; gap: 14px; padding: 22px; }
-.cert-plain .cert-body { padding: 0; }
-.cert-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; font-size: 1.4rem;
-  background: var(--bg-2); border: 1px solid var(--line); }
 
 /* Certificate viewer */
 .cert-viewer { width: min(1000px, 100% - 24px); max-height: calc(100dvh - 24px); padding: 0; border: 1px solid var(--line);
