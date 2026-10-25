@@ -44,7 +44,7 @@
 *,
 *::before,
 *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; overflow-x: clip; } /* decorative glows never cause sideways scrolling */
 body { margin: 0; font-family: var(--font); font-size: 1rem; line-height: 1.65; color: var(--text);
   background: var(--bg); -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; height: auto; display: block; }
@@ -182,17 +182,13 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 /* The GuardRail screenshot is wide (about 2:1): show all of it, never trim the sides. The backdrop is the
    dashboard's own navy, so any spare space blends into the screenshot. */
 .project.feature img { aspect-ratio: auto; object-fit: contain; object-position: center; background: #070d1a; }
-.project.wide { background: linear-gradient(120deg, rgb(59 130 246 / 0.1), var(--surface) 45%, rgb(249 115 22 / 0.1)); }
 @media (min-width: 760px) {
   .projects { grid-template-columns: repeat(6, 1fr); }
   .project.feature { grid-column: 1 / -1; display: grid; grid-template-columns: 1.35fr 1fr; }
   .project.feature img { height: 100%; aspect-ratio: auto; min-height: 360px; border-bottom: 0; border-right: 1px solid var(--line); }
   .project.feature h3 { font-size: 2rem; }
-  .project:not(.feature):not(.wide) { grid-column: span 3; }
-  .project.wide { grid-column: 1 / -1; }
-  .project.wide .card-body { flex-direction: row; align-items: center; justify-content: space-between; gap: 24px; }
-  .project.wide .links { margin: 0; padding: 0; }
-}
+  .project:not(.feature) { grid-column: span 3; }
+  }
 
 /* Highlight: the two bugs */
 .highlight { margin-top: 44px; padding: 30px; border-radius: 24px; color: #fff; position: relative; overflow: hidden;
@@ -216,13 +212,11 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 .skill-group.security { background: linear-gradient(160deg, rgb(249 115 22 / 0.14), var(--surface) 60%);
   border-color: rgb(249 115 22 / 0.35); }
 .skill-group.security .chips span { background: rgb(249 115 22 / 0.12); border-color: rgb(249 115 22 / 0.35); }
-.skill-group.how { background: linear-gradient(160deg, rgb(59 130 246 / 0.14), var(--surface) 60%); }
-.skill-group.how p { margin: 0; color: var(--muted); }
 @media (min-width: 860px) {
   .skills { grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "fe fe fe fe sec sec" "be be db db sec sec" "tl tl tl how how how"; }
+    grid-template-areas: "fe fe fe be be be" "db db sec sec tl tl"; }
   .sk-fe { grid-area: fe; } .sk-be { grid-area: be; } .sk-db { grid-area: db; }
-  .sk-tl { grid-area: tl; } .sk-sec { grid-area: sec; } .sk-how { grid-area: how; }
+  .sk-tl { grid-area: tl; } .sk-sec { grid-area: sec; }
 }
 
 /* Certifications */
