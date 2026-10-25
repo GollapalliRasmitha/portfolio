@@ -211,12 +211,14 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 .skill-group h3 { font-size: 1.15rem; margin-bottom: 14px; }
 .skill-group.security { background: linear-gradient(160deg, rgb(249 115 22 / 0.14), var(--surface) 60%);
   border-color: rgb(249 115 22 / 0.35); }
+.skill-group.ai { background: linear-gradient(160deg, rgb(59 130 246 / 0.16), var(--surface) 60%); }
+.skill-group.ai .chips span { background: rgb(59 130 246 / 0.12); border-color: rgb(59 130 246 / 0.35); }
 .skill-group.security .chips span { background: rgb(249 115 22 / 0.12); border-color: rgb(249 115 22 / 0.35); }
 @media (min-width: 860px) {
   .skills { grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "fe fe fe be be be" "db db sec sec tl tl"; }
+    grid-template-areas: "fe fe be be ai ai" "db db sec sec tl tl"; }
   .sk-fe { grid-area: fe; } .sk-be { grid-area: be; } .sk-db { grid-area: db; }
-  .sk-tl { grid-area: tl; } .sk-sec { grid-area: sec; }
+  .sk-tl { grid-area: tl; } .sk-sec { grid-area: sec; } .sk-ai { grid-area: ai; }
 }
 
 /* Certifications */
@@ -231,6 +233,16 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; margin: 0; font-
 .cert-meta { color: var(--muted); font-size: 0.9rem; }
 .cert-cta { margin-top: auto; padding-top: 8px; color: var(--orange-text); font-weight: 600; font-size: 0.92rem; }
 .cert-open:hover .cert-cta { text-decoration: underline; }
+
+/* Education & experience */
+.exp { display: grid; gap: 18px; }
+@media (min-width: 760px) { .exp { grid-template-columns: 1fr 1fr; } }
+.exp-card { padding: 26px; }
+.exp-card h3 { font-size: 1.2rem; margin: 4px 0 2px; }
+.exp-card p { margin: 6px 0 0; color: var(--muted); }
+.exp-card .exp-when { margin: 0; color: var(--orange-text); font-weight: 600; font-size: 0.9rem; }
+.exp-card .exp-where { margin-top: 0; font-weight: 500; }
+.exp-score strong { font-family: var(--display); font-size: 2rem; color: var(--text); margin-right: 6px; }
 
 /* Certificate viewer */
 .cert-viewer { width: min(1000px, 100% - 24px); max-height: calc(100dvh - 24px); padding: 0; border: 1px solid var(--line);
