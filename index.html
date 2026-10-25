@@ -222,12 +222,66 @@
     <!-- Certifications -->
     <section id="certifications" class="section container">
       <p class="eyebrow">Certifications</p>
-      <h2>Certifications</h2>
+      <h2>Certificates</h2>
+      <p class="lead certs-lead">Internship, workshop, hackathon and Python certificates. Click one to view it.</p>
       <ul class="certs">
-        <li class="card tilt"><span class="cert-icon" aria-hidden="true">🛡️</span>Cybersecurity</li>
-        <li class="card tilt"><span class="cert-icon" aria-hidden="true">🔍</span>Ethical Hacking</li>
-        <li class="card tilt"><span class="cert-icon" aria-hidden="true">🐍</span>Python</li>
-        <li class="card tilt"><span class="cert-icon" aria-hidden="true">💬</span>Communication Skills</li>
+        <li class="card cert tilt">
+          <button class="cert-open" type="button" aria-haspopup="dialog" data-title="Web Development Internship" data-full="certificates/systemtron-internship.webp"
+            data-original="certificates/systemtron-internship.webp" data-original-label="Open full size">
+            <img src="certificates/thumbs/systemtron-internship.webp" alt="" loading="lazy">
+            <span class="cert-body">
+              <span class="cert-title">Web Development Internship</span>
+              <span class="cert-meta">SystemTron · 8 weeks, offline · 18 May – 12 Jul 2026</span>
+              <span class="cert-cta">View certificate <span aria-hidden="true">→</span></span>
+            </span>
+          </button>
+        </li>
+        <li class="card cert tilt">
+          <button class="cert-open" type="button" aria-haspopup="dialog" data-title="Best Student: Ethical Hacking &amp; Cyber Security Workshop" data-full="certificates/supraja-ethical-hacking.webp"
+            data-original="certificates/supraja-ethical-hacking.pdf" data-original-label="Open PDF">
+            <img src="certificates/thumbs/supraja-ethical-hacking.webp" alt="" loading="lazy">
+            <span class="cert-body">
+              <span class="cert-title">Best Student: Ethical Hacking &amp; Cyber Security Workshop</span>
+              <span class="cert-meta">Supraja Technologies · Certificate of Excellence · 26 Mar 2026</span>
+              <span class="cert-cta">View certificate <span aria-hidden="true">→</span></span>
+            </span>
+          </button>
+        </li>
+        <li class="card cert tilt">
+          <button class="cert-open" type="button" aria-haspopup="dialog" data-title="Vibe Coding Hackathon: Certificate of Excellence" data-full="certificates/vibe-coding-hackathon.webp"
+            data-original="certificates/vibe-coding-hackathon.webp" data-original-label="Open full size">
+            <img src="certificates/thumbs/vibe-coding-hackathon.webp" alt="" loading="lazy">
+            <span class="cert-body">
+              <span class="cert-title">Vibe Coding Hackathon: Certificate of Excellence</span>
+              <span class="cert-meta">NXTGENSEC × IGNITION · 15–17 Mar 2026</span>
+              <span class="cert-cta">View certificate <span aria-hidden="true">→</span></span>
+            </span>
+          </button>
+        </li>
+        <li class="card cert tilt">
+          <button class="cert-open" type="button" aria-haspopup="dialog" data-title="Python Development Assessment Test" data-full="certificates/qwiktest-python-assessment.webp"
+            data-original="certificates/qwiktest-python-assessment.pdf" data-original-label="Open PDF">
+            <img src="certificates/thumbs/qwiktest-python-assessment.webp" alt="" loading="lazy">
+            <span class="cert-body">
+              <span class="cert-title">Python Development Assessment Test</span>
+              <span class="cert-meta">Qwiktest × Infotact · score 57/60 (95%)</span>
+              <span class="cert-cta">View certificate <span aria-hidden="true">→</span></span>
+            </span>
+          </button>
+        </li>
+        <li class="card cert tilt">
+          <button class="cert-open" type="button" aria-haspopup="dialog" data-title="DataQuezt #2: Python for Data" data-full="certificates/naukri-dataquezt-python.webp"
+            data-original="certificates/naukri-dataquezt-python.pdf" data-original-label="Open PDF">
+            <img src="certificates/thumbs/naukri-dataquezt-python.webp" alt="" loading="lazy">
+            <span class="cert-body">
+              <span class="cert-title">DataQuezt #2: Python for Data</span>
+              <span class="cert-meta">Naukri Campus · Certificate of Participation · 2 Aug 2026</span>
+              <span class="cert-cta">View certificate <span aria-hidden="true">→</span></span>
+            </span>
+          </button>
+        </li>
+        <li class="card cert cert-plain tilt"><span class="cert-icon" aria-hidden="true">💬</span>
+          <span class="cert-body"><span class="cert-title">Communication Skills</span></span></li>
       </ul>
     </section>
 
@@ -260,6 +314,15 @@
       <p><a href="#top">Back to top ↑</a></p>
     </div>
   </footer>
+
+  <dialog id="cert-viewer" class="cert-viewer" aria-labelledby="cert-viewer-title">
+    <div class="viewer-head">
+      <h3 id="cert-viewer-title">Certificate</h3>
+      <button class="viewer-close" type="button" aria-label="Close certificate">✕</button>
+    </div>
+    <img id="cert-viewer-img" src="data:," alt="">
+    <p class="viewer-actions"><a id="cert-viewer-original" class="btn btn-ghost btn-sm" href="#" target="_blank" rel="noopener">Open original</a></p>
+  </dialog>
 
   <script src="script.js" defer></script>
 </body>

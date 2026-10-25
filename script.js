@@ -25,6 +25,32 @@ if (emailLink) {
   emailLink.querySelector(".email-text").textContent = address;
 }
 
+// ---- Certificates: each card opens the certificate in a viewer (native <dialog>: Esc closes, focus returns). ---------
+const viewer = document.getElementById("cert-viewer");
+if (viewer && typeof viewer.showModal === "function") {
+  const viewerImg = document.getElementById("cert-viewer-img");
+  const viewerTitle = document.getElementById("cert-viewer-title");
+  const viewerOriginal = document.getElementById("cert-viewer-original");
+  document.querySelectorAll(".cert-open").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const { title, full, original, originalLabel } = btn.dataset;
+      viewerTitle.textContent = title;
+      viewerImg.src = full;
+      viewerImg.alt = `Certificate: ${viewerTitle.textContent}`;
+      viewerOriginal.href = original;
+      viewerOriginal.textContent = originalLabel;
+      viewer.showModal();
+    });
+  });
+  viewer.querySelector(".viewer-close").addEventListener("click", () => viewer.close());
+  viewer.addEventListener("click", (e) => e.target === viewer && viewer.close()); // click on the dimmed backdrop
+} else {
+  // Very old browsers: open the certificate itself instead.
+  document.querySelectorAll(".cert-open").forEach((btn) =>
+    btn.addEventListener("click", () => window.open(btn.dataset.full, "_blank", "noopener")),
+  );
+}
+
 // ---- Phone menu ----------------------------------------------------------------------------------------------------
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.getElementById("nav-links");
